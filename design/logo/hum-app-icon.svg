@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-labelledby="title">
+  <title id="title">Hum app icon</title>
+  <!-- macOS grid: an 824-unit body (inset 100) with corner radius 186, Hum Crimson, and the white symbol
+       at 62 % centred 2 % high. Below 32 px the icon uses hum-symbol-small.svg at 75 %, stroke 32. -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="#B81D45"/>
+  <g transform="translate(512 496) scale(2.48) translate(-128 -126)">
+    <path d="M28 126 H48 C64 126 64 100 80 100 C92 100 100 152 112 152 C124 152 132 100 144 100 C156 100 164 152 176 152 C192 152 192 126 208 126 H228" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFFFF" stroke-width="24"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">Hum symbol, reversed</title>
+  <!-- Vibrato. 256 grid, unit 8: a flat line (x 28-228, y 126) breaking into two even ripples
+       (crests y 100, troughs y 152, extrema every 32 units from x 80 to 176); stroke 24, round caps and joins.
+       Flat tangents at every crest and trough keep the ripples round, never a zig-zag. Centred 2 units
+       above the grid's centre (optical centre). Stroke-based master: scale the drawing and the stroke together. -->
+  <path d="M28 126 H48 C64 126 64 100 80 100 C92 100 100 152 112 152 C124 152 132 100 144 100 C156 100 164 152 176 152 C192 152 192 126 208 126 H228" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFFFF" stroke-width="24"/>
+</svg>

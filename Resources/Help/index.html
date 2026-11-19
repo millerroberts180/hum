@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Using Hum</title>
+<!-- Hum Help: the "Using Hum" section of docs/guide.md, plus the surfaces, styles, widgets and
+     the Status page. Keep them in step; a test compares the key tables. -->
+<style>
+:root {
+    --text: #1d1d1f;
+    --secondary: #6e6e73;
+    --background: #ffffff;
+    --separator: #d2d2d7;
+    --key: #f2f2f4;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --background: #1e1e1e;
+        --separator: #424245;
+        --key: #2c2c2e;
+    }
+}
+body {
+    margin: 0;
+    padding: 40px 20px 64px;
+    background: var(--background);
+    color: var(--text);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+main { max-width: 640px; margin: 0 auto; }
+h1 { font-size: 28px; font-weight: 700; margin: 0 0 8px; }
+h2 { font-size: 19px; font-weight: 600; margin: 36px 0 8px; }
+p, li { color: var(--text); }
+.lead { color: var(--secondary); font-size: 17px; margin-bottom: 8px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--separator); }
+th { font-weight: 600; color: var(--secondary); font-size: 13px; }
+td:first-child { white-space: nowrap; width: 1%; }
+kbd {
+    font: inherit;
+    font-size: 13px;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background: var(--key);
+    border: 1px solid var(--separator);
+}
+ul { padding-left: 20px; }
+li { margin: 4px 0; }
+footer { margin-top: 40px; color: var(--secondary); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Using Hum</h1>
+<p class="lead">Hum lives in the menu bar. Its player is a small floating window of album art; point at it and the controls appear, and they go the moment the pointer leaves, unless you’re dragging the seek bar or a popover is open.</p>
+
+<p>The player has three surfaces. Swipe sideways with two fingers, press ⌘1 – ⌘3, or choose from Show ▸ to move between them. The page indicator along the top appears only when the page changes, to show where you are, and fades a moment after the page settles.</p>
+<ul>
+<li><strong>Now</strong>: the song playing, in the style you choose.</li>
+<li><strong>History</strong>: a card or two about the song playing and this listening session, from history kept only on your Mac.</li>
+<li><strong>Status</strong>: which music app Hum follows, and whether Hum may control each one.</li>
+</ul>
+<p>Right-click the player for its menu: the song’s actions, Style ▸, Pin to ▸, Show ▸ (Now, History, Status), Move to Menu Bar, and Hide Player.</p>
+
+<h2>Styles</h2>
+<p>Choose a style in Settings › Appearance, or from Style ▸ in the player’s menu. Each style keeps a light look and a dark look, and Reset Style puts back the original. In every style the song’s title is a step larger than the artist line, so it stands apart.</p>
+<ul>
+<li><strong>Art Only</strong>: the cover alone at rest, with an optional progress line or ring. Point at it and everything appears over the cover: the title and artist, Favorite and More, the seek bar, shuffle, previous, play, next and repeat, and at the larger sizes the volume and the devices.</li>
+<li><strong>Title</strong>: a short bar with a small cover, the title, and the artist. Point at it and the controls and seek bar take the place of the words.</li>
+<li><strong>Text</strong>: a capsule with the title and artist in words alone. Point at it and the five controls spread across it. Album tint fills it with the cover’s color.</li>
+<li><strong>Strip</strong>: a slim bar with the cover, a seek notch, and the controls, always showing. Point at it and the notch grows and shows the time.</li>
+<li><strong>Wide</strong>: a card with the cover at its leading edge and, beside it, the title and artist with Favorite and More, a seek bar with times, the controls, and the volume, always showing. Point at it and the seek bar grows.</li>
+<li><strong>Big Art</strong>: a taller card with the cover on top and, under it, the same title row, seek bar, controls, and volume as Wide, always showing. Point at it and the seek bar grows.</li>
+<li><strong>Menu Bar</strong>: no window at all. The menu bar shows the cover, the title, play or pause, and next. Click it for a Now Playing popover with a larger cover, the seek bar, and the controls; Esc or a click outside closes it. <strong>Pop Out Player</strong>, in the popover or the menu, brings the window back in the style you had before.</li>
+</ul>
+<p>Choose <strong>Move to Menu Bar</strong> in the player’s menu to switch to Menu Bar. In Title, Text, Strip and Wide, History and Status open in a larger square that goes back to the bar or card when you return to Now.</p>
+
+<h2>Placing the player</h2>
+<ul>
+<li>The player can sit in nine places on a display: Top Left, Top, Top Right, Left, Center, Right, Bottom Left, Bottom, and Bottom Right. Choose one from Pin to ▸ in the player’s menu, or with Position in Settings › Behavior.</li>
+<li>Throw the player, or drag it and let go, and it settles in the nearest of the nine places, on any display. Turn this off with <strong>Snap when thrown</strong> in Settings › Behavior.</li>
+<li>With Snap when thrown off, drag the player anywhere you like: it stays exactly where you drop it.</li>
+<li>A pinned player keeps its place when it changes size, and each display remembers its own place and size.</li>
+<li>Show the player in Settings › Behavior chooses when it appears: Always, On Track Change, Under Menu Bar, or On Request.</li>
+</ul>
+
+<h2>The menu-bar menu</h2>
+<p>Hum’s mark sits in the menu bar, dimmed when no music app is available. Click it for the song playing (its title, then its artist, shortened with “…” when they’re long, so the menu stays narrow) or Nothing Playing, Play or Pause, Next Track, Previous Track, Show Player or Hide Player (with your shortcut, if you set one), Listening History…, Settings…, and Quit Hum. In the Menu Bar style the item is the player itself: click it for the popover, and right-click it for this menu, with Pop Out Player in place of Show Player.</p>
+
+<h2>Widgets</h2>
+<p>Add a Hum widget from the widget gallery: choose Edit Widgets from the desktop’s shortcut menu, or at the bottom of Notification Center, and look for Hum. There are three:</p>
+<ul>
+<li><strong>Art Only</strong>: small, or large with the title, progress, and controls over the cover.</li>
+<li><strong>Title</strong>: medium, with the cover beside the title, controls, and progress.</li>
+<li><strong>Text</strong>: small, with the title and artist.</li>
+</ul>
+<p>Small widgets have no buttons: click one to show the player. Medium and large widgets have controls, which work without bringing Hum forward. With nothing playing a widget shows Hum’s mark, and when Hum isn’t running it shows the last song, paused. If the widgets ever stop updating after Hum is updated, quitting and opening Hum again sets them going.</p>
+
+<h2>Status</h2>
+<p>Status shows the app Hum follows and what it’s doing: Playing, Paused, Open, nothing playing, Not open, or Not installed. “Chosen automatically” means Hum picked it, because Settings › Sources is set to Automatic. With neither app on this Mac, Status says No Music App.</p>
+<p>Below that, Status lists Music and then Spotify, each with its own icon from the app on this Mac (as Settings › Sources shows them), and whether Hum may control each one:</p>
+<ul>
+<li><strong>Allowed</strong>: Hum can control the app. There’s nothing to do.</li>
+<li><strong>Not allowed</strong>: you chose Don’t Allow when macOS asked. Click <strong>Open System Settings…</strong>, then turn the app on under Hum in Privacy &amp; Security › Automation.</li>
+<li><strong>Not asked yet</strong>: click <strong>Allow…</strong> and choose Allow when macOS asks.</li>
+<li><strong>Not open</strong>: macOS reports an app’s permission only while the app is open, and Hum never opens an app just to ask. Open the app to see where it stands.</li>
+<li><strong>Not installed</strong>: the app isn’t on this Mac, so its row is dimmed.</li>
+</ul>
+<p>Status checks again each time it appears and each time you come back to Hum. <strong>Settings…</strong> at the bottom opens Settings › Sources, where Control picks Automatic, Music, or Spotify.</p>
+
+<h2>Settings</h2>
+<p>Choose Settings… from the menu-bar menu. The sidebar groups the panes: General first; then Player, with Appearance, Behavior, and Shortcuts; then Music, with Sources and History &amp; Privacy; and last Hum, with Hum’s version, what it does, and Quit Hum. About Hum, in Hum’s own menu, opens the Hum pane too. Settings brings no Dock icon, and ⌘W closes it.</p>
+
+<h2>Music and Spotify</h2>
+<p>Hum controls Music and Spotify through their own apps, with Apple Events, so macOS asks once for each app. There’s no account to connect.</p>
+<ul>
+<li>With both, Hum shows the song and its artwork, and has the transport, seek, volume, shuffle, repeat (Off, All, and One), Copy Link, and Show in App. History and Listening History work with both, and from either you can play a song again.</li>
+<li>With Music, Hum also has Favorite and AirPlay devices.</li>
+<li>With Spotify, songs from History play one at a time, and Favorite is hidden, because Spotify’s app doesn’t let other apps save songs.</li>
+<li>Spotify’s app doesn’t let other apps choose repeat one, so Hum makes its own: with One, Hum keeps Spotify’s repeat on and starts the song over just before it ends, and each time through counts as a play in History. Spotify’s own window shows its repeat on, not repeat one; the first time you choose One, a note on the repeat button says so. Turning repeat off in Spotify ends One, and One isn’t kept when Hum quits: it comes back as All.</li>
+<li>Shuffle and repeat changed in Music or Spotify show on the player within about a second while that app is in front, and when you point at the player.</li>
+</ul>
+
+<h2>History and Listening History</h2>
+<p>Hum notes each song you play: a play counts after 30 seconds and half the song, or 4 minutes for long songs. History stays in a file on this Mac, and Hum never sends it anywhere.</p>
+<ul>
+<li>History shows what stands out about the song playing and this session.</li>
+<li>See All in History, Listening History… in the menu-bar menu, or Open Listening History… in Settings › History &amp; Privacy opens the Listening History window: This Week, Calendar, History, Top, and Rediscover.</li>
+<li>The window opens with its sidebar hidden, to leave the most room. Show it with the sidebar button in the toolbar, and it stays as you leave it while Hum runs.</li>
+<li>In History, the Any Artist, Any Album, Any Playlist, and Any Time menus narrow the list, and Clear Filters puts it back. Any Playlist appears only once a listen came from a playlist.</li>
+<li>Top ranks your songs, artists, or albums for the period you choose.</li>
+<li>In Calendar, click a day to see its listens, or move between days with the arrow keys.</li>
+<li>Settings › History &amp; Privacy has <strong>Collect listening history</strong>, to turn collection off and on; <strong>Import Spotify History…</strong>, for Spotify’s data download, and <strong>Remove Imported History…</strong>, to take it out again; <strong>Export as JSON…</strong> and <strong>Export as CSV…</strong>; and <strong>Erase All History…</strong>. Erasing or removing listens leaves nothing of them in the file.</li>
+</ul>
+
+<h2>Keyboard</h2>
+<table>
+<thead><tr><th>Keys</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td><kbd>Space</kbd></td><td>Play / Pause</td></tr>
+<tr><td><kbd>⌘→</kbd> / <kbd>⌘←</kbd></td><td>Next / Previous track</td></tr>
+<tr><td><kbd>⌘↑</kbd> / <kbd>⌘↓</kbd></td><td>Volume up / down</td></tr>
+<tr><td><kbd>⌥⇧B</kbd></td><td>Favorite the current track, in Music; a short note confirms it</td></tr>
+<tr><td><kbd>⌘1</kbd> – <kbd>⌘3</kbd></td><td>Now, History, Status</td></tr>
+<tr><td><kbd>←</kbd> / <kbd>→</kbd></td><td>Previous / next surface, when the player has focus and no text field is active</td></tr>
+<tr><td><kbd>⌘,</kbd></td><td>Settings</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Back out one level: close the topmost popover or menu, or the Menu Bar popover; in Title, Text, Strip or Wide, go back to Now from History or Status</td></tr>
+<tr><td><kbd>⌘W</kbd></td><td>Hide Player; in Settings or the Listening History window, close that window</td></tr>
+<tr><td>None until you set one</td><td>Show or hide the player from anywhere; in Menu Bar, open or close its popover (global; set it in Settings › Shortcuts, and the menu-bar menu shows it)</td></tr>
+<tr><td><kbd>↑</kbd> <kbd>↓</kbd> <kbd>↩</kbd></td><td>Navigate and choose in lists (History, the Listening History window)</td></tr>
+</tbody>
+</table>
+
+<h2>Pointer and trackpad</h2>
+<ul>
+<li>Swipe two fingers sideways to move between surfaces.</li>
+<li>Swipe two fingers up or down on the cover, or scroll over the volume slider, to change the volume.</li>
+<li>Pinch the player to make it larger or smaller.</li>
+<li>Right-click the player for its menu.</li>
+</ul>
+
+<footer>© 2026 Miller Roberts</footer>
+</main>
+</body>
+</html>

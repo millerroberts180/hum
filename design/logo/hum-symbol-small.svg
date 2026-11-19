@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">Hum symbol, small sizes</title>
+  <!-- For 32 px and below: shorter tails, taller ripples and a 32-unit stroke, so the ripples stay open. -->
+  <path d="M40 128 H58 C72 128 72 96 86 96 C96 96 104 160 114 160 C124 160 132 96 142 96 C152 96 160 160 170 160 C184 160 184 128 198 128 H216" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#1E1418" stroke-width="32"/>
+</svg>

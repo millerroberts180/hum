@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468 256" width="468" height="256" role="img" aria-labelledby="title">
+  <title id="title">Hum wordmark</title>
+  <!-- Monoline from the symbol's stroke (24, round caps): cap height y 60-180, x-height y 100-180. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#1E1418" stroke-width="24">
+    <path d="M24 60 V180 M104 60 V180 M24 118 H104"/>
+    <path d="M154 100 V140 A40 40 0 0 0 234 140 M234 100 V180"/>
+    <path d="M284 100 V180 M284 140 A40 40 0 0 1 364 140 V180 M364 140 A40 40 0 0 1 444 140 V180"/>
+  </g>
+</svg>
